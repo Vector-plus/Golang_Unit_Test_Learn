@@ -18,7 +18,7 @@ func TestCulculate(t *testing.T) {
 	Convey("测试Subt函数", t, func() {
 		//断言函数判断
 		So(Subt(1, 3), ShouldEqual, -2)
-		So(Subt(10, 5), ShouldEqual, 51)
+		So(Subt(10, 5), ShouldEqual, 5)
 	})
 
 	Convey("测试Mult函数", t, func() {
