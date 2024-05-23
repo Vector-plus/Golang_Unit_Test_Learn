@@ -10,7 +10,7 @@ import (
 )
 
 // 测试go-Mock打桩，利用interface多态的特点生成测试对象，实现替换interface中的某些方法
-// 生成对象指令（mockgen插件） mockgen -source=./mail.go -destination=../mocktest/mock_mockdemo.go -package=mocktest Mail
+// 生成对象指令（mockgen插件） mockgen -source=./AE.go -destination=../mockytest/AE_gen.go -package=mockytest
 func TestMock(t *testing.T) {
 
 	Convey("测试example.WiteAndSend(string,int)方法", t, func() {

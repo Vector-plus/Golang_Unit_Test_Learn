@@ -40,7 +40,7 @@ func TestHttpSrv(t *testing.T) {
 		// 通过httptest.NewServer创建了一个测试的http server,写自己的HandlerFunc函数，处理请求。
 		ts := httptest.NewServer(http.HandlerFunc(HttpSrv))
 		defer ts.Close()
-
+		//传入mock的http地址
 		resp, err := example.GetUserInfo(ts.URL)
 		fmt.Println(resp)
 		So(err, ShouldBeNil)

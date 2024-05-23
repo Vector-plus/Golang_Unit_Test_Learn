@@ -334,7 +334,7 @@ func TestMock(t *testing.T) {
 
 **注意事项：**
 
-+ 不支持内联函数，在测试的时候需要通过go test -gcflags=all=-l 关闭内联优化。
++ 不支持内联函数，在测试的时候需要通过go test -gcflags=all=-l 关闭内联优化。[内联优化](https://tonybai.com/2022/10/17/understand-go-inlining-optimisations-by-example/)
 + 不是线程安全的，所以不要把它用到并发的单元测试中。
 + 不支持异包未导出函数的打桩、不支持同包未导出方法的打桩
 
