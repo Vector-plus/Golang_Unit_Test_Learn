@@ -132,7 +132,7 @@
 - 自动在终端中运行自动测试脚本
 - 可立即在 Sublime Text 中打开测试问题对应的代码行 (some assembly required)
 
-**实现代码链接**：[go-Convey使用](/gotest/conveytest/cul_test.go)
+**实现代码链接**：[go-Convey使用](/Golang_Unit_Test_Learn/gotest/conveytest/cul_test.go)
 
 **some待测函数**
 ```go
@@ -269,7 +269,7 @@ Mock是在测试过程中，对于一些不容易构造/获取的对象，创建
 
 >具体实现代码
 
-**代码链接：**[go-mock实现依赖替换](/gotest/mockytest/mock_test.go)
+**代码链接：**[go-mock实现依赖替换](/Golang_Unit_Test_Learn/gotest/mockytest/mock_test.go)
 ```go
 package mockytest
 
@@ -346,7 +346,7 @@ func TestMock(t *testing.T) {
 
 **具体实现**
 
-实现代码：[go-monkey测试代码](/gotest/monkeytest/monkey_test.go)
+实现代码：[go-monkey测试代码](/Golang_Unit_Test_Learn/gotest/monkeytest/monkey_test.go)
 
 ```go
 package monkeytest
@@ -416,7 +416,7 @@ httptest是Go官方提供的专门用于进行http Web开发测试的包。我�
 2. 写自己的HandlerFunc函数，处理请求。设置返回参数等。
 
 **具体实现：**
-**测试实现：**[httptest实现代码](/gotest/httptest/httpserver_test.go)
+**测试实现：**[httptest实现代码](/Golang_Unit_Test_Learn/gotest/httptest/httpserver_test.go)
 
 ```go
 package httptest
@@ -505,7 +505,7 @@ go-sqlmock 本质是一个实现了 sql/driver 接口的 mock 库，它的设计
 3. 模拟数据库中的行为调用Expectxxx()函数
 
 **具体实现：**
-**实现代码链接**[go-sqlmock实现](/gotest/mysqltest/sql_test.go)
+**实现代码链接**[go-sqlmock实现](/Golang_Unit_Test_Learn/gotest/mysqltest/sql_test.go)
 ```go
 package mysqltest
 
@@ -598,7 +598,7 @@ Miniredis实现了Redis服务器的一部分，用于单元测试。它通过真
 3. 调用Redis命令：通过客户端调用Redis命令。预置需要的数据到服务中。
 
 **具体实现：**
-**代码实现链接：**[go-miniredis](/gotest/redistest/redis_test.go)
+**代码实现链接：**[go-miniredis](/Golang_Unit_Test_Learn/gotest/redistest/redis_test.go)
 
 ```go
 package redistest
