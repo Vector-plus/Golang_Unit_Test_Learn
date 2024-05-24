@@ -28,11 +28,7 @@ dfdfdfdfdfd------branch___fuhaitao2
 
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 
-
-
-ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-
-fffffffffffffffffffffffffffffffffffffffffffffffffffff
+ggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
 
 >测试：对代码正确性的验证工作。一般分为单元测试、集成测试和系统测试。
 
