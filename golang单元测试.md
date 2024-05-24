@@ -26,13 +26,10 @@ testtestttt================->
 
 dfdfdfdfdfd------branch___fuhaitao2
 
-<<<<<<< HEAD
-=======
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 
 ggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
 
->>>>>>> main
 >测试：对代码正确性的验证工作。一般分为单元测试、集成测试和系统测试。
 
 **单元测试**：它是在软件开发过程中进行的最小级别的测试。单元测试通常针对软件应用中的一个小模块（例如，一个函数或方法）进行，将其与系统的其他部分隔离开来。目标是确保每个代码模块都达到预期效果，从而在初期阶段就挖掘出能够提升代码质量的bug。
