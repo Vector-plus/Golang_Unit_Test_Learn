@@ -50,7 +50,17 @@ func TestSqlMock(t *testing.T) {
 
 		//定义的传入参数、期望的sql语句和期待返回的值
 		uid := 1
-		sql := "SELECT * FROM `users` WHERE ID = ?"
+		//sqlite
+		//gorm.DryRun
+		//设计模式依赖注入
+
+		// sql := "SELECT * FROM `users` WHERE ID = ?"
+
+		u := &example.User{}
+		stmt := db.Session(&gorm.Session{DryRun: true}).Where("ID = ?", uid).Find(&u).Statement
+		sql := stmt.SQL.String()
+		// fmt.Println("sqlll", sql)
+
 		re := sqlmock.NewRows([]string{"UserName", "password", "age"}).AddRow("fht", "123456ddd", 12)
 		//设置sql_mock期待执行的sql语句。可以根据不同的sql使用情景选择合适的Expectxxx方法
 		mock.ExpectQuery(sql).WithArgs(uid).WillReturnRows(re)
