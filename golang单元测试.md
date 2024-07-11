@@ -228,7 +228,7 @@ func TestCulculate(t *testing.T) {
 }
 ```
 **命令行查看测试结果（查看覆盖率）效果图**
->指令： go test -v -cover
+>指令： go test -v -cover   go test -v -coverpkg=./...(跨包查看覆盖率)
 
 ![命令窗口指令](/Golang_Unit_Test_Learn/static/convey-ctl.png)
 
