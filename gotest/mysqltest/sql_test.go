@@ -1,6 +1,7 @@
 package mysqltest
 
 import (
+	"encoding/json"
 	"fmt"
 	"gotest/dv1/example"
 	"testing"
@@ -59,9 +60,9 @@ func TestSqlMock(t *testing.T) {
 		u := &example.User{}
 		stmt := db.Session(&gorm.Session{DryRun: true}).Where("ID = ?", uid).Find(&u).Statement
 		sql := stmt.SQL.String()
-		// fmt.Println("sqlll", sql)
+		fmt.Println("sqlll", sql)
 
-		re := sqlmock.NewRows([]string{"UserName", "password", "age"}).AddRow("fht", "123456ddd", 12)
+		re := sqlmock.NewRows([]string{"uSserName", "passlword", "age"}).AddRow("fht", "123456ddd", 12)
 		//设置sql_mock期待执行的sql语句。可以根据不同的sql使用情景选择合适的Expectxxx方法
 		mock.ExpectQuery(sql).WithArgs(uid).WillReturnRows(re)
 
@@ -71,4 +72,13 @@ func TestSqlMock(t *testing.T) {
 
 	})
 
+}
+
+func TestDuanyant(t *testing.T) {
+	var in interface{}
+	in = "[1,2]"
+
+	d := []int{}
+
+	json.Unmarshal(in.([]byte), &d)
 }
